@@ -28,5 +28,7 @@ public class EmpleadoEntity {
     private String correoEmpleado;
     @Column(name = "fecha_nacimiento_empleado")
     private String fechaNacimientoEmpleado;
+    @Column(name = "genero")
+    private String genero;
 
 }
