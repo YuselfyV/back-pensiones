@@ -417,15 +417,17 @@ public class UtilidadesAplicacion {
         BigDecimal bigDecimalValueDiez = new BigDecimal(valorSMLVDiez);
         int comparisonResult = pensionReferencia.compareTo(bigDecimalValueCinco);
         int comparisonResult1 = pensionReferencia.compareTo(bigDecimalValueDiez);
-        if (comparisonResult < 0 ) {
+        if (comparisonResult < 0) {
             System.out.println("Auxilio Funerario PR: " + bigDecimalValueCinco);
             return bigDecimalValueCinco;
-        } else if (comparisonResult >=0 || comparisonResult1 > 0) {
+        } else if ( comparisonResult1 > 0) {
             System.out.println("Auxilio Funerario PR: " + bigDecimalValueDiez);
             return bigDecimalValueDiez;
-
+        } else {
+            System.out.println("Auxilio Funerario PR: " + pensionReferencia);
+            return pensionReferencia;
         }
-        return null;
+
     }
 
     /**
